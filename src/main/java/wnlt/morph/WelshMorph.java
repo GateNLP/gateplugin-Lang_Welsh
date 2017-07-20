@@ -283,14 +283,13 @@ public class WelshMorph
    * Method is executed after the init() method has finished its execution.
    * <BR>Method does the following operations:
    * <OL type="1">
-   * <LI> creates the annotationSet
-   * <LI> fetches word tokens from the document, one at a time
-   * <LI> runs the morpher on each individual word token
-   * <LI> finds the root and the affix for that word
-   * <LI> adds them as features to the current token
-   * @throws ExecutionException
-   */
-  
+   * <LI> creates the annotationSet</LI>
+   * <LI> fetches word tokens from the document, one at a time</LI>
+   * <LI> runs the morpher on each individual word token</LI>
+   * <LI> finds the root and the affix for that word</LI>
+   * <LI> adds them as features to the current token</LI>
+   * </OL>
+   */  
   @Override
   public void cleanup() {
     Factory.deleteResource(transducer);

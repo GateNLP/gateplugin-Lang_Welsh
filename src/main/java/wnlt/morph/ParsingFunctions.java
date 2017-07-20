@@ -272,10 +272,9 @@ public class ParsingFunctions {
 
 	/**
 	 * This method is used to find the method definition But it can recognize
-	 * only String, boolean and int types for Example: stem(2,"ed","d") ==>
+	 * only String, boolean and int types for Example: stem(2,"ed","d") ==&gt;
 	 * stem(int,java.lang.String,java.lang.String);
 	 * 
-	 * @param method
 	 * @return the definition of the method
 	 */
 	public static String getMethodName(String method) {
@@ -311,7 +310,7 @@ public class ParsingFunctions {
 	
 	/**
 	 * This method is used to find the method definition But it can recognize
-	 * only String, boolean and int types for Example: stem(2,"ed","d") ==>
+	 * only String, boolean and int types for Example: stem(2,"ed","d") ==&gt;
 	 * stem(int,java.lang.String,java.lang.String);
 	 * 
 	 * @param method
@@ -436,7 +435,7 @@ public class ParsingFunctions {
 
 	
 	/**
-	 * (abc) -> a -> b -> c ->
+	 * (abc) -&gt; a -&gt; b -&gt; c -&gt;
 	 */
 	public static List<Set<FSMState>> andFSMs(String line, Set<FSMState> initStates, Interpret owner) {
 		// for the first inital State
@@ -485,9 +484,9 @@ public class ParsingFunctions {
 	}
 
 	/**
-	 * [abc] -> a, 
-	 * 		 -> b, 
-	 * 		 -> c
+	 * [abc] -&gt; a, 
+	 * 		 -&gt; b, 
+	 * 		 -&gt; c
 	 */ 
 	public static List<Set<FSMState>> orFSMs(String line, Set<FSMState> initStates, Interpret owner) {
 		// for each character in the line
@@ -576,8 +575,8 @@ public class ParsingFunctions {
 
 	/**
 	 * (abc)+ 
-	 * -> a -> b -> c -> null 
-	 * -> a -> b -> c -> a
+	 * -^gt; a -&gt; b -&gt; c -&gt; null 
+	 * -&gt; a -&gt; b -&gt; c -&gt; a
 	 */
 	public static List<Set<FSMState>> andPlusFSMs(String line, Set<FSMState> initStates, Interpret owner) {
 		// for the first inital State
