@@ -16,6 +16,9 @@
 	<groupId>uk.ac.gate.plugins</groupId>
 	<artifactId>lang-welsh</artifactId>
 	<version>8.5-SNAPSHOT</version>
+	
+	<name>Language: Welsh</name>
+	<description>Support for processing Welsh documents</description>
 
 	<licenses>
 		<license>
